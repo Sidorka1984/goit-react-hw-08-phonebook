@@ -1,15 +1,15 @@
 // import { useState, useEffect, useRef } from "react";
 // import { v4 as uuidv4 } from "uuid";
 import { Toaster } from "react-hot-toast";
-import Container from "./Container";
-import Form from "./Form";
-import Filter from "./Filter/Filter.jsx";
-import ContactsList from "./ContactsList/ContactsList.jsx";
+import Container from "./component/Container";
+import Form from "./component/Form";
+import Filter from "./component/Filter/Filter.jsx";
+import ContactsList from "./component/ContactsList/ContactsList.jsx";
 import { GrContactInfo } from "react-icons/gr";
 // import ContactsJson from "../Data/contacts.json";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
-import { getContacts } from "../redux/selectors";
+import { getContacts } from "./redux/selectors";
 
 export default function App() {
   const contacts = useSelector(getContacts);
