@@ -1,7 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import { combineReducers } from "redux";
 import { fetchContact, addContact, deleteContact } from "../operation.js";
-// import initialContacts from "../../Data/contacts.json";
 
 const contactsSlice = createSlice({
   name: "contacts",
@@ -12,58 +10,42 @@ const contactsSlice = createSlice({
     error: null,
   },
   reducers: {
-    changeFilter: (state, action) => {
-      state.filter = action.payload;
+    changeFilter: (state, { payload }) => {
+      state.filter = payload;
     },
   },
   extraReducers: {
-    [fetchContact.fulfilled]: (state, action) => {
-      state.items = action.payload;
+    [fetchContact.fulfilled]: (state, { payload }) => {
+      state.items = payload;
       state.status = null;
       state.error = null;
     },
-    [fetchContact.pending]: (state, action) => {
+    [fetchContact.pending]: (state) => {
       state.status = "loading";
     },
-    [fetchContact.rejected]: (state, action) => {
+    [fetchContact.rejected]: (state) => {
       state.status = null;
       state.error = "Error";
     },
-    [addContact.fulfilled]: (state, action) => {
-      state.items = [action.payload, ...state.items];
+    [addContact.fulfilled]: (state, { payload }) => {
+      state.items = [payload, ...state.items];
       state.status = null;
       state.error = null;
     },
-    [addContact.pending]: (state, action) => {
+    [addContact.pending]: (state) => {
       state.status = "loading";
       state.error = null;
     },
-    [addContact.rejected]: (state, action) => {
+    [addContact.rejected]: (state) => {
       state.status = null;
       state.error = "Error";
     },
-    [deleteContact.fulfilled]: (state, action) => {
-      state.items = state.items.filter(
-        (contact) => contact.id !== action.payload
-      );
+    [deleteContact.fulfilled]: (state, { payload }) => {
+      state.items = state.items.filter((contact) => contact.id !== payload);
     },
   },
 });
 
-// const filterSlice = createSlice({
-// name: "filter",
-// initialState: initialState.filter,
-// reducers: {
-// changeFilter: (_, { payload }) => payload,
-// },
-// });
-
-// const rootReduser = combineReducers({
-// contacts: contactsSlice.reducer,
-// filter: filterSlice.reducer,
-// });
-
-// export const { addContact, deleteContact } = contactsSlice.actions;
 export const { changeFilter } = contactsSlice.actions;
 
 export default contactsSlice.reducer;
