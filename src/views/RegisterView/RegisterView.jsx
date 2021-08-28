@@ -1,9 +1,11 @@
 import React from 'react';
-import { TextField } from '@material-ui/core';
+// import { TextField } from '@material-ui/core';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import operations from '../../redux/auth/auth-operation';
-import { Button, Container, Form, Title } from "../LoginView/LoginView.styled";
+// import operations from '../../redux/auth/auth-operation';
+import { register } from '../../redux/auth/auth-operation';
+import { Button, Container, Form, Title, Label } from "../LoginView/LoginView.styled";
+
 
 export default function RegisterView() {
     const dispatch = useDispatch();
@@ -25,8 +27,8 @@ export default function RegisterView() {
     }
 
     const handleSubmit = (e) => {
-        e.preventDefault()
-        dispatch(operations.register({ name, email, password }));
+        e.preventDefault();
+        dispatch(register({ name, email, password }));
         setName('');
         setEmail('');
         setPassword('');
@@ -36,38 +38,44 @@ export default function RegisterView() {
         <Container>
             <Title>Sing up</Title>
             <Form onSubmit={handleSubmit} autoComplete="off">
-                <TextField
-                    id="name"
-                    label="Name"
-                    variant="outlined"
-                    margin="dense"
-                    size="medium"
-                    type="text"
-                    name="name"
-                    value={name}
-                    onChange={handleChange}
-                />
-                <TextField
-                    id="email"
-                    label="Mail"
-                    variant="outlined"
-                    margin="dense"
-                    type="email"
-                    name="email"
-                    value={email}
-                    onChange={handleChange}
-                />
-
-                <TextField
-                    id="password"
-                    label="Password"
-                    variant="outlined"
-                    margin="dense"
-                    type="password"
-                    name="password"
-                    value={password}
-                    onChange={handleChange}
-                />
+                <Label>
+                    <input
+                        // id="name"
+                        // label="Name"
+                        // variant="outlined"
+                        // margin="dense"
+                        // size="medium"
+                        type="text"
+                        name="name"
+                        value={name}
+                        onChange={handleChange}
+                    />
+                </Label>
+                <Label>
+                    <input
+                        // id="email"
+                        // label="Mail"
+                        // variant="outlined"
+                        // margin="dense"
+                        type="email"
+                        name="email"
+                        value={email}
+                        onChange={handleChange}
+                    />
+                </Label>
+                <Label>
+                    <input
+                        // id="password"
+                        // label="Password"
+                        // variant="outlined"
+                        // margin="dense"
+                        type="password"
+                        name="password"
+                        value={password}
+                        onChange={handleChange}
+                        
+                        />
+                </Label>
                 <Button type="submit">
                     Register
                 </Button>

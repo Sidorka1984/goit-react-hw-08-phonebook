@@ -4,8 +4,8 @@ import { Text } from './Filter.styles';
 import { useSelector, useDispatch } from "react-redux";
 // import { getFilter } from '../../redux/selectors';
 // import * as actions from '../../redux/actions.js';
-import { changeFilter } from '../../redux/slices/todo';
-import { selectors } from "../../redux";
+import { changeFilter } from '../../redux/contacts/slices/todo';
+import { selectors } from "../../redux/contacts";
 
 
 

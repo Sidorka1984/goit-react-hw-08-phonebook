@@ -6,7 +6,7 @@ import Container from '../../component/Container/Container';
 import Form from '../../component/Form/formHoock';
 import FormList from '../../component/ContactsList/ContactsList';
 import Filter from '../../component/Filter/Filter';
-import { selectors } from '../../redux';
+import { selectors } from '../../redux/contacts';
 
 import { TitleH2 } from "./ContactView.styled";
 import { TitleH1 } from "./ContactView.styled";

@@ -38,7 +38,7 @@ function App() {
       ) : (
           <>
             <AppBar />
-            <Toaster autoClose={4000} position="top-right" />
+            {/* <Toaster autoClose={4000} position="top-right" /> */}
             <Switch>
               <Suspense fallback={<ContactLoader />}>
                 <PublicRoute exact path='/'>

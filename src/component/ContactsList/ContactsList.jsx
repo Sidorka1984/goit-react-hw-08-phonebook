@@ -5,7 +5,7 @@ import { Contact, ContactItem, BtnDelete } from './ContactsList.styles';
 import { AiOutlineDelete, AiOutlineUser } from 'react-icons/ai';
 // import * as actions from "../../redux/actions.js";
 // import { getVisibleContacts } from "../../redux/selectors.js";
-import { operation, selectors } from "../../redux";
+import { operation, selectors } from "../../redux/contacts";
 
 
 const ContactsList = () => {

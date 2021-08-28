@@ -3,7 +3,7 @@ import {
   fetchContacts,
   fetchAddContact,
   fetchDeleteContact,
-} from "../services/contactsApi.js";
+} from "../../services/contactsApi.js";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
 // axios.defaults.baseURL = "https://611a85245710ca00173a1a7b.mockapi.io";

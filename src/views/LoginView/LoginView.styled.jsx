@@ -27,15 +27,28 @@ export const Container = styled.div`
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    
 `;
 
 export const Form = styled.form`
     width: 320;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
+justify-content: center;
 `
 
 export const Title = styled.h1`
     color: #424549;
-`
+`;
+export const Label = styled.label`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+`;
 

@@ -1,2 +1,1 @@
-export * as operation from "./auth-operation";
-export * as selectors from "./auth-selectors";
+export { default as authOperations } from "./auth-operations";

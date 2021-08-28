@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import { Input, TitleSecond, Button } from './Form.styles';
 import { FiUser, FiPhoneCall } from 'react-icons/fi';
 import { AiOutlineUserAdd } from 'react-icons/ai';
-import { operation, selectors } from "../../redux";
+import { operation, selectors } from "../../redux/contacts";
 
 
 

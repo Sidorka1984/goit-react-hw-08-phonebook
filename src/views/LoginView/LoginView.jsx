@@ -1,9 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { Button, Container, Form, Title } from "./LoginView.styled";
-import { TextField } from '@material-ui/core';
+import { Button, Container, Form, Title, Label} from "./LoginView.styled";
+// import { TextField } from '@material-ui/core';
 import operations from '../../redux/auth/auth-operation';
+
 
 export default function LoginView() {
     const dispatch = useDispatch();
@@ -32,26 +33,30 @@ export default function LoginView() {
         <Container>
             <Title>Sign in</Title>
             <Form onSubmit={handleSubmit} autoComplete="off">
-                <TextField
-                    id="email"
-                    label="Email Address"
-                    variant="outlined"
-                    margin="normal"
-                    type="email"
-                    name="email"
-                    value={email}
-                    onChange={handleChange}
-                />
-                <TextField
-                    id="password"
-                    label="Password"
-                    variant="outlined"
-                    margin="normal"
-                    type="password"
-                    name="password"
-                    value={password}
-                    onChange={handleChange}
-                />
+                <Label>
+                    <input
+                        // id="email"
+                        // label="Email Address"
+                        // variant="outlined"
+                        // margin="normal"
+                        type="email"
+                        name="email"
+                        value={email}
+                        onChange={handleChange}                        
+                        />
+                </Label>
+                <Label>
+                    <input
+                        // id="password"
+                        // label="Password"
+                        // variant="outlined"
+                        // margin="normal"
+                        type="password"
+                        name="password"
+                        value={password}
+                        onChange={handleChange}                        
+                        />
+                </Label>
                 <Button type="submit">
                     Sign In
                 </Button>

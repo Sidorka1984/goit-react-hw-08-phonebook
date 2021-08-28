@@ -32,16 +32,17 @@ const Navigation = () => {
             <NavLink to='/' exact style={styles.link} activeStyle={styles.activeLink}>
                 Home
             </NavLink>
-            {isLoggedIn &&
-                <NavLink
-                    to='/contacts'
-                    exact
-                    style={styles.link}
-                    activeStyle={styles.activeLink}
-                >
-                    <span style={styles.span}> | </span>
-                    PhoneBook
-                </NavLink>}
+        {isLoggedIn && (
+          <NavLink
+            to='/contacts'
+            exact
+            style={styles.link}
+            activeStyle={styles.activeLink}
+          >
+            <span style={styles.span}> | </span>
+            PhoneBook
+          </NavLink>
+        )}
         </nav>
     )
 

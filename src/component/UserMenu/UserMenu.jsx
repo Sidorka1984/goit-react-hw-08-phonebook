@@ -9,15 +9,16 @@ import { ImUserTie } from 'react-icons/im';
 export default function UserMenu() {
     const dispatch = useDispatch();
     const name = useSelector(authSelectors.getUsername);
+ 
 
     return (
         <Container>
             <ImUserTie size="30" />
             <Title>
-                <span>Welcome {name}</span>
+                <span>Welcome, {name}</span>
             </Title>
             <Button
-                type="submit"
+                type="button"
                 onClick={() => dispatch(operations.logOut())}>
                 Log out
             </Button>

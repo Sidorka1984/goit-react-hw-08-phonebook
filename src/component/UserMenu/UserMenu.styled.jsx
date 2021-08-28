@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 export const Container = styled.div`    
     display: flex;
     align-items: center;
+
 `
 export const Title = styled.h2`
     font-weight: 700;
