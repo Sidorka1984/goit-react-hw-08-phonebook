@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const styles = {
   link: {
-    display: 'inline-block',
+    display: 'space-between',
     textDecoration: 'none',
     padding: 12,
     fontSize: 25,
@@ -27,7 +27,7 @@ export default function AuthNav() {
         style={styles.link}
         activeStyle={styles.activeLink}
       >
-        register
+        Register
       </NavLink>
       |
       <NavLink

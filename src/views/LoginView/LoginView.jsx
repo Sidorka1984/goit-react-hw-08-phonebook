@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Button, Container, Form, Title } from "./LoginView.styled";
 import { TextField } from '@material-ui/core';
-import { logIn } from '../../redux/auth/auth-operation';
+import operations from '../../redux/auth/auth-operation';
 
 export default function LoginView() {
     const dispatch = useDispatch();
@@ -23,7 +23,7 @@ export default function LoginView() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        dispatch(logIn({ email, password }))
+        dispatch(operations.logIn({ email, password }))
         setEmail('')
         setPassword('')
     }

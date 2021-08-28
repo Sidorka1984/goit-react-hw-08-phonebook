@@ -2,13 +2,13 @@ import React from 'react';
 import { Button } from '../../views/LoginView/LoginView.styled';
 import { Container, Title } from './UserMenu.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { getUsername } from '../../redux/auth/auth-selectors';
-import { logOut } from '../../redux/auth/auth-operation';
+import authSelectors from '../../redux/auth/auth-selectors';
+import operations from '../../redux/auth/auth-operation';
 import { ImUserTie } from 'react-icons/im';
 
 export default function UserMenu() {
     const dispatch = useDispatch();
-    const name = useSelector(getUsername);
+    const name = useSelector(authSelectors.getUsername);
 
     return (
         <Container>
@@ -18,7 +18,7 @@ export default function UserMenu() {
             </Title>
             <Button
                 type="submit"
-                onClick={() => dispatch(logOut())}>
+                onClick={() => dispatch(operations.logOut())}>
                 Log out
             </Button>
         </Container>

@@ -2,7 +2,7 @@ import React from 'react';
 import { TextField } from '@material-ui/core';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { register } from '../../redux/auth/auth-operation';
+import operations from '../../redux/auth/auth-operation';
 import { Button, Container, Form, Title } from "../LoginView/LoginView.styled";
 
 export default function RegisterView() {
@@ -26,7 +26,7 @@ export default function RegisterView() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        dispatch(register({ name, email, password }));
+        dispatch(operations.register({ name, email, password }));
         setName('');
         setEmail('');
         setPassword('');

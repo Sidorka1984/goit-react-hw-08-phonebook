@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { getIsLoggedIn } from '../redux/auth/auth-selectors.js';
+import authSelectors from '../redux/auth/auth-selectors.js';
 
 const styles = {
   link: {
@@ -25,7 +25,7 @@ const styles = {
 
 const Navigation = () => {
 
-    const isLoggedIn = useSelector(getIsLoggedIn);
+    const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
     
     return (
         <nav>
