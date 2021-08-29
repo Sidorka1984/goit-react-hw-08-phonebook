@@ -1,5 +1,5 @@
 import React from 'react';
-// import { TextField } from '@material-ui/core';
+import { TextField } from '@material-ui/core';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 // import operations from '../../redux/auth/auth-operation';
@@ -39,12 +39,12 @@ export default function RegisterView() {
             <Title>Register</Title>
             <Form onSubmit={handleSubmit} autoComplete="off">
                 <Label>
-                    <input
-                        // id="name"
-                        // label="Name"
-                        // variant="outlined"
-                        // margin="dense"
-                        // size="medium"
+                    <TextField
+                        id="name"
+                        label="Name"
+                        variant="outlined"
+                        margin="dense"
+                        size="medium"
                         type="text"
                         name="name"
                         value={name}
@@ -52,11 +52,11 @@ export default function RegisterView() {
                     />
                 </Label>
                 <Label>
-                    <input
-                        // id="email"
-                        // label="Mail"
-                        // variant="outlined"
-                        // margin="dense"
+                    <TextField
+                        id="email"
+                        label="Mail"
+                        variant="outlined"
+                        margin="dense"
                         type="email"
                         name="email"
                         value={email}
@@ -64,11 +64,11 @@ export default function RegisterView() {
                     />
                 </Label>
                 <Label>
-                    <input
-                        // id="password"
-                        // label="Password"
-                        // variant="outlined"
-                        // margin="dense"
+                    <TextField
+                        id="password"
+                        label="Password"
+                        variant="outlined"
+                        margin="dense"
                         type="password"
                         name="password"
                         value={password}

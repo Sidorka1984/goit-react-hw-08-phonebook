@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Button, Container, Form, Title, Label} from "./LoginView.styled";
-// import { TextField } from '@material-ui/core';
+import { TextField } from '@material-ui/core';
 import operations from '../../redux/auth/auth-operation';
 
 
@@ -34,11 +34,11 @@ export default function LoginView() {
             <Title>Sign in</Title>
             <Form onSubmit={handleSubmit} autoComplete="off">
                 <Label>
-                    <input
-                        // id="email"
-                        // label="Email Address"
-                        // variant="outlined"
-                        // margin="normal"
+                    <TextField
+                        id="email"
+                        label="Email Address"
+                        variant="outlined"
+                        margin="normal"
                         type="email"
                         name="email"
                         value={email}
@@ -46,11 +46,11 @@ export default function LoginView() {
                         />
                 </Label>
                 <Label>
-                    <input
-                        // id="password"
-                        // label="Password"
-                        // variant="outlined"
-                        // margin="normal"
+                    <TextField
+                        id="password"
+                        label="Password"
+                        variant="outlined"
+                        margin="normal"
                         type="password"
                         name="password"
                         value={password}

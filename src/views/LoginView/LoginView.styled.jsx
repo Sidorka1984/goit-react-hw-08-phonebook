@@ -4,6 +4,7 @@ export const Button = styled.button`
     align-items: center;
     justify-content: center;
     margin-left: 10px;
+    margin-top: 15px;
     padding: 10px 28px;
     max-width: 200px;
     font-weight: 700;
@@ -47,7 +48,7 @@ export const Label = styled.label`
     justify-content: center;
     width: 200px;
     flex-direction: column;
-    margin-bottom: 15px;
+    ${'' /* margin-bottom: 15px; */}
     margin-left: auto;
     margin-right: auto;
 `;
