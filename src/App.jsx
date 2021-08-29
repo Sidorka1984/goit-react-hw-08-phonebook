@@ -54,9 +54,9 @@ function App() {
               </PrivateRoute>
               </Suspense>
             </Switch>
-            <Toaster autoClose={4000} position="top-right" />
           </>
       )}
+      <Toaster autoClose={4000} position="top-right" />
     </div>
   )
 }
