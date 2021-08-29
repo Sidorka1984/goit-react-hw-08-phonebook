@@ -8,14 +8,14 @@ import { ImUserTie } from 'react-icons/im';
 
 export default function UserMenu() {
     const dispatch = useDispatch();
-    const name = useSelector(authSelectors.getUsername);
+    const username = useSelector(authSelectors.getUsername);
  
 
     return (
         <Container>
             <ImUserTie size="30" />
             <Title>
-                <span>Welcome, {name}</span>
+                <span>{username}</span>
             </Title>
             <Button
                 type="button"

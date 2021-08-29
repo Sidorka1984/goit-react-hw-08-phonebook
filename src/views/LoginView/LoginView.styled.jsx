@@ -11,14 +11,14 @@ export const Button = styled.button`
     text-align: center;
     letter-spacing: 0.06em;
     text-decoration: none;
-    background-color: transparent;
+    background-color: #d2ffff;
     border: solid 1.5px #848484;
     color: #848484;
     border-radius: 4px;
     cursor: pointer;
     &:hover {
       border:  solid 1.5px #09c3e4;
-      box-shadow: 0 0 20px rgb(135, 206, 250);
+      box-shadow: 0px 0px 5px  rgba(0,0,0,0.5);
       color: black;
     }
 `;
@@ -35,7 +35,7 @@ export const Form = styled.form`
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-justify-content: center;
+    justify-content: center;
 `
 
 export const Title = styled.h1`

@@ -57,7 +57,9 @@ export default function LoginView() {
                         onChange={handleChange}                        
                         />
                 </Label>
-                <Button type="submit">
+                <Button type="submit"
+                    disabled={!email || !password}
+                >
                     Sign In
                 </Button>
 

@@ -36,7 +36,7 @@ export default function RegisterView() {
 
     return (
         <Container>
-            <Title>Sing up</Title>
+            <Title>Register</Title>
             <Form onSubmit={handleSubmit} autoComplete="off">
                 <Label>
                     <input
@@ -76,7 +76,9 @@ export default function RegisterView() {
                         
                         />
                 </Label>
-                <Button type="submit">
+                <Button type="submit"
+                    disabled={!name || !email || !password}
+                >
                     Register
                 </Button>
             </Form>

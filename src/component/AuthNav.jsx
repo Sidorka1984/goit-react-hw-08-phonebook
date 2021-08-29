@@ -8,10 +8,10 @@ const styles = {
     padding: 12,
     fontSize: 25,
     fontWeight: 350,
-    color: '#DCDCDC',
+    color: '#313738',
   },
   activeLink: {
-    color: '#87CEFA',
+    color: '#75a0f0',
     fontSize: 28,
     fontWeight: 600,
   },

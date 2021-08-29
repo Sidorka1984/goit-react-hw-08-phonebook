@@ -2,7 +2,7 @@ import { useEffect, Suspense, lazy } from "react";
 import { Switch } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
-import { Toaster, toast } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import operations from './redux/auth/auth-operation';
 import AppBar from './component/AppBar/AppBar.jsx';
 import PrivateRoute from './component/PrivateRoute';
@@ -27,9 +27,9 @@ function App() {
     dispatch(operations.fetchCurrentUser());
   }, [dispatch]);
 
-  useEffect(() => {
-    toast.error( 'Invalid Authorization &#10060');
-  }, [])
+  // useEffect(() => {
+    // toast.error( 'Invalid Authorization &#10060');
+  // }, [])
 
   return (
     <div>
@@ -37,8 +37,7 @@ function App() {
         <ContactLoader />
       ) : (
           <>
-            <AppBar />
-            {/* <Toaster autoClose={4000} position="top-right" /> */}
+            <AppBar />            
             <Switch>
               <Suspense fallback={<ContactLoader />}>
                 <PublicRoute exact path='/'>
@@ -55,6 +54,7 @@ function App() {
               </PrivateRoute>
               </Suspense>
             </Switch>
+            <Toaster autoClose={4000} position="top-right" />
           </>
       )}
     </div>
