@@ -7,7 +7,7 @@ const styles = {
   link: {
     display: 'inline-block',
     textDecoration: 'none',
-    padding: 12,
+    padding: 5,
     fontSize: 25,
     fontWeight: 350,
     color: '#313738',

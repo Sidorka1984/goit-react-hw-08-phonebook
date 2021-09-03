@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled/macro';
 
 export const Container = styled.div`    
     display: flex;
@@ -13,5 +13,9 @@ export const Title = styled.h2`
     color: #dcdcdc;
     font-weight: 700;
     margin-right: 12px;
+     @media screen and (max-width: 420px) {
+        font-weight: 300;
+        font-size: 20px;
+        }
    
 `

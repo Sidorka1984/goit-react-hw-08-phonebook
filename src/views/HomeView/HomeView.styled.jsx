@@ -12,7 +12,8 @@ export const Title = styled.h1`
    text-align: center;
     font-size: 26px;
    font-weight: 800;
-   color:#75a0f0;   
+   color:#75a0f0;
+     
 `;
 
 export const Thumb = styled.div`

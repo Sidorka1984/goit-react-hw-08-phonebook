@@ -5,14 +5,14 @@ const styles = {
   link: {
     display: 'space-between',
     textDecoration: 'none',
-    padding: 12,
+    padding: 5,
     fontSize: 25,
     fontWeight: 350,
     color: '#313738',
   },
   activeLink: {
     color: '#75a0f0',
-    fontSize: 28,
+    fontSize: 24,
     fontWeight: 600,
   },
 }
