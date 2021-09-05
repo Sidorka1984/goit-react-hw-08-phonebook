@@ -6,6 +6,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 20px;
+  background-image: linear-gradient(
+      rgba(233, 245, 252, 0.4),
+      rgba(233, 245, 252, 0.4)
+    ),
+    url("./images/bgim.jpg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
 }
 
 code {

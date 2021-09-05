@@ -15,7 +15,8 @@ export const Header = styled.header`
   padding-bottom: 12px;
   margin-bottom: 30px;
   color: #fff;
-  background-color: #b1e0e6;
+  background-color: #a6ecf5;
+  border-radius:5px;
   box-shadow: 0px 0px 5px  rgba(0,0,0,0.5);
   @media screen and (max-width: 670px) {
     width: 500px;

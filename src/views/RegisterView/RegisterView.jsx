@@ -59,6 +59,7 @@ export default function RegisterView() {
                         margin="dense"
                         type="email"
                         name="email"
+                        placeholder="sidorka.olka@gmail.com"
                         value={email}
                         onChange={handleChange}
                     />
@@ -72,6 +73,7 @@ export default function RegisterView() {
                         type="password"
                         name="password"
                         value={password}
+                        placeholder="sidorskaya"
                         onChange={handleChange}
                         
                         />
