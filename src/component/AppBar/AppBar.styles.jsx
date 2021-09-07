@@ -18,10 +18,4 @@ export const Header = styled.header`
   background-color: #a6ecf5;
   border-radius:5px;
   box-shadow: 0px 0px 5px  rgba(0,0,0,0.5);
-  @media screen and (max-width: 670px) {
-    width: 500px;
-    display: flex;
-    margin-bottom: 5px;
-    font-size: 20px;
-  }
 `;

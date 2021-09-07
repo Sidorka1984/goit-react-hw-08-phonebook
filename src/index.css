@@ -11,7 +11,7 @@ body {
       rgba(233, 245, 252, 0.4)
     ),
     url("./images/bgim.jpg");
-  background-position: center right;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }

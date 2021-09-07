@@ -6,13 +6,13 @@ const styles = {
     display: 'space-between',
     textDecoration: 'none',
     padding: 5,
-    fontSize: 25,
+    fontSize: 20,
     fontWeight: 350,
     color: '#313738',
   },
   activeLink: {
     color: '#75a0f0',
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: 600,
   },
 }

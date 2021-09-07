@@ -20,7 +20,7 @@ export const Thumb = styled.div`
     display: flex;
     margin-top: 10px;
     justify-content: center;
-  
+      
     @media screen and (max-width: 450px) {
         width: 320px;
         height: auto;
