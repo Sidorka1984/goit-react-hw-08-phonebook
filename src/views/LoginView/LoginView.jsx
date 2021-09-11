@@ -42,6 +42,7 @@ export default function LoginView() {
                         type="email"
                         name="email"
                         value={email}
+                        placeholder="your_name@gmail.com"
                         onChange={handleChange}                        
                         />
                 </Label>
@@ -54,6 +55,7 @@ export default function LoginView() {
                         type="password"
                         name="password"
                         value={password}
+                        placeholder="password"
                         onChange={handleChange}                        
                         />
                 </Label>

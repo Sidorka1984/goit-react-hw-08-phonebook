@@ -22,13 +22,19 @@ export const Button = styled.button`
       box-shadow: 0px 0px 5px  rgba(0,0,0,0.5);
       color: black;
     }
+@media screen and (min-width: 320px) {
+    font-weight: 500;
+    font-size: 10px;
+    padding: 5px 5px;
+    margin-left: 5px
+    margin-top: 10px;
+  }
 `;
 
 export const Container = styled.div`
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    
+    text-align: center;    
 `;
 
 export const Form = styled.form`
@@ -46,7 +52,7 @@ export const Label = styled.label`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    width: 250px;
     flex-direction: column;
     ${'' /* margin-bottom: 15px; */}
     margin-left: auto;

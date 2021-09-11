@@ -48,6 +48,7 @@ export default function RegisterView() {
                         type="text"
                         name="name"
                         value={name}
+                        placeholder="name"
                         onChange={handleChange}
                     />
                 </Label>
@@ -59,7 +60,7 @@ export default function RegisterView() {
                         margin="dense"
                         type="email"
                         name="email"
-                        placeholder="sidorka.olka@gmail.com"
+                        placeholder="your_name@gmail.com"
                         value={email}
                         onChange={handleChange}
                     />
@@ -73,7 +74,7 @@ export default function RegisterView() {
                         type="password"
                         name="password"
                         value={password}
-                        placeholder="sidorskaya"
+                        placeholder="password"
                         onChange={handleChange}
                         
                         />

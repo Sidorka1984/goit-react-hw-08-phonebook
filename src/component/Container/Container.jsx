@@ -3,7 +3,7 @@ import { FaBookOpen } from 'react-icons/fa';
 
 const Container = ({ title, children }) => (
     <Containers>
-        <Title><FaBookOpen /> {title}</Title>
+        <Title><FaBookOpen />{title}</Title>
         {children}
     </Containers>
 );

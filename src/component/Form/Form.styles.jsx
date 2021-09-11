@@ -7,6 +7,10 @@ font-weight: 500;
 margin: 0;
 justify-content:center;
 padding-bottom: 10px;
+ @media screen and (max-width: 450px) {
+   font-weight: 500;
+   font-size: 12px;
+ }
 `
 export const Input = styled.input`
 max-width:350px;
@@ -20,7 +24,10 @@ border-radius:5px;
 &:hover{
     border:  solid 2px #79e000;
     box-shadow: 0 0 20px rgba(121, 224, 0, 0.5);
-}`
+    
+}
+
+`
 
 export const Button = styled.button`
 padding: 5px;

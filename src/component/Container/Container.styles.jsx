@@ -10,11 +10,23 @@ export const Containers = styled.div`
   &:hover{
       box-shadow: 0px 0px 5px  rgba(0,0,0,0.5);
   }
-`
+@media screen and (max-width: 450px) {
+    width: 250px;
+    font-weight: 300;
+    font-size: 10px;
+    padding: 10px 15px;
+    
+  }
+`;
 export const Title = styled.h1`
-    text-align: center;
-   
+    text-align: center;   
     color: #000;
     font-weight: bold;
     font-size: 42px;
+    @media screen and (max-width: 450px) {      
+    font-weight: 500;
+    font-size: 20px;
+    
+  }
+
 `

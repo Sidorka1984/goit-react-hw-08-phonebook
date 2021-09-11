@@ -15,7 +15,7 @@ export const ContactItem = styled.li`
  padding: 5px 5px;
  font-size: 16px;
  text-transform: capitalize;
- justify-content: left;
+
  & span {
     display: inline-flex;
     align-items: center;
@@ -27,6 +27,10 @@ export const ContactItem = styled.li`
       margin-right: 10px;     
     }
   }
+  @media screen and (max-width: 450px) {
+  font-weight: 500;
+  font-size: 12px;
+}
 
 `
 
@@ -42,5 +46,12 @@ border-radius: 10%;
     color: #79e000;
     border:  solid 2px #79e000;
     box-shadow: 1px 2px 2px 0 rgba(121, 224, 0, 0.5);
+}
+@media screen and (max-width: 450px) {
+  displayL flex
+  font-weight: 500;
+  font-size: 12px;
+  margin-left: 10px;
+  padding: 3px;
 }
 `
